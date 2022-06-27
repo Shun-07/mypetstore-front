@@ -1,0 +1,131 @@
+<table>
+	<tr>
+		<th align="center" colspan="2">
+			Order: {{ListData.orderId}}    
+		    Data: {{ListData.orderDate}}
+		</th>
+	</tr>
+	<tr>
+		<th colspan="2">Payment Details</th>
+	</tr>
+	<tr>
+		<td>Card Type:</td>
+		<td>{{ListData.cardType}}</td>
+	</tr>
+	<tr>
+		<td>Card Number:</td>
+		<td>{{ListData.creditCard}}</td>
+	</tr>
+	<tr>
+		<td>Expiry Date (MM/YYYY):</td>
+		<td>{{ListData.expiryDate}}</td>
+	</tr>
+	<tr>
+		<th colspan="2">Billing Address</th>
+	</tr>
+	<tr>
+		<td>First name:</td>
+		<td>{{ListData.billToFirstName}}</td>
+	</tr>
+	<tr>
+		<td>Last name:</td>
+		<td>{{ListData.billToLastName}}</td>
+	</tr>
+	<tr>
+		<td>Address 1:</td>
+		<td>{{ListData.billAddress1}}</td>
+	</tr>
+	<tr>
+		<td>Address 2:</td>
+		<td>{{ListData.billAddress2}}</td>
+	</tr>
+	<tr>
+		<td>City:</td>
+		<td>{{ListData.billCity}}</td>
+	</tr>
+	<tr>
+		<td>State:</td>
+		<td>{{ListData.billState}}</td>
+	</tr>
+	<tr>
+		<td>Zip:</td>
+		<td>{{ListData.billZip}}</td>
+	</tr>
+	<tr>
+		<td>Country:</td>
+		<td>{{ListData.billCountry}}</td>
+	</tr>
+	<tr>
+		<th colspan="2">Shipping Address</th>
+	</tr>
+	<tr>
+		<td>First name:</td>
+		<td>{{ListData.shipToFirstName}}</td>
+	</tr>
+	<tr>
+		<td>Last name:</td>
+		<td>{{ListData.shipToLastName}}</td>
+	</tr>
+	<tr>
+		<td>Address 1:</td>
+		<td>{{ListData.shipAddress1}}</td>
+	</tr>
+	<tr>
+		<td>Address 2:</td>
+		<td>{{ListData.shipAddress2}}</td>
+	</tr>
+	<tr>
+		<td>City:</td>
+		<td>{{ListData.shipCity}}</td>
+	</tr>
+	<tr>
+		<td>State:</td>
+		<td>{{ListData.shipState}}</td>
+	</tr>
+	<tr>
+		<td>Zip:</td>
+		<td>{{ListData.shipZip}}</td>
+	</tr>
+	<tr>
+		<td>Country:</td>
+		<td>{{ListData.shipCountry}}</td>
+	</tr>
+	<tr>
+		<td>Courier:</td>
+		<td>{{ListData.courier}}</td>
+	</tr>
+	<tr>
+		<td colspan="2">Status: {{ListData.status}}</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<table>
+			<tr>
+				<th>Item ID</th>				
+				<th>Quantity</th>
+				<th>Price</th>
+				<th>Total Cost</th>
+			</tr>
+
+		{{#ListData.lineItems}}
+				<tr>
+					<td>
+						<a href="item.html?itemId={{itemId}}">{{itemId}}</a>
+					</td>					
+
+					<td>{{quantity}}</td>
+					<td>{{unitPrice}}</td>
+					<td>{{total}}</td>
+				</tr>
+		{{/ListData.lineItems}}
+
+
+			<tr>
+				<th colspan="5">
+					Total: {{ListData.totalPrice}}
+				</th>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,36 @@
+ <table>
+     <tr> 
+        <td>
+         <img src={{ListData.description}} id="description"></img>
+        </td>
+     </tr>
+     <tr>
+        <td>
+            <b id="itemId">{{ListData.itemId}}</b>
+        </td>
+     </tr>
+     <tr>
+         <td>
+             <b id="attribute">
+                 <font size="4">
+                     {{ListData.attribute}}
+                 </font>
+             </b>
+         </td>
+     </tr>
+   
+     <tr>
+         <td id="quantity}">{{ListData.quantity}}</td>
+          </tr>
+     <tr>
+         <td> 
+             {{ListData.price}} Price
+         </td>
+     </tr>
+     <tr>
+         <td> 
+           
+            <input type="button" id="{{ListData.itemId}}"  name="add" class="add" value="Add to Cart "  >
+         </td>
+     </tr>
+ </table>

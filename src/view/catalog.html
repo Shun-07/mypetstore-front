@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+    <header>
+        <div id="Header">
+
+            <div id="Logo">
+                <div id="LogoContent">
+                    <a id="main" href="main"><img src="../images/logo-topbar.gif" /></a>
+                </div>
+            </div>
+
+            <div id="Menu">
+                <div id="MenuContent">
+                    <a id="viewCart" href="/viewCart"><img align="middle" name="img_cart" src="../images/cart.gif" /></a>
+                    <img align="middle" src="../images/separator.gif" />
+                    <label>
+                        <a id="signIn" href="signIn">Sign In</a>
+                    </label>
+
+                    <img align="middle" src="../images/separator.gif" />
+                    <a href="../help.html">?</a>
+                </div>
+            </div>
+
+            <div id="Search">
+                <div id="SearchContent">
+                    <form action="searchProduct" method="post">
+                        <input type="text" name="keyword" size="14" />
+                        <input type="submit" name="searchProducts" value="Search" />
+                    </form>
+                </div>
+            </div>
+
+            <div id="QuickLinks">
+                <a href="./catalog-list.html">
+                    <img src="../images/sm_fish.gif" />
+                </a>
+                <img src="../images/separator.gif" />
+                <a href="./catalog-list.html">
+                    <img src="../images/sm_dogs.gif" />
+                </a>
+                <img src="../images/separator.gif" />
+                <a href="./catalog-list.html">
+                    <img src="../images/sm_reptiles.gif" />
+                </a>
+                <img src="../images/separator.gif" />
+                <a href="./catalog-list.html">
+                    <img src="../images/sm_cats.gif" />
+                </a>
+                <img src="../images/separator.gif" />
+                <a href="./catalog-list.html">
+                    <img src="../images/sm_birds.gif" />
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="Content">
+            <div id="Welcome">
+                <div id="WelcomeContent">
+                    Welcome to MyPetStore!
+                </div>
+            </div>
+    
+            <div id="Main">
+                <div id="Sidebar">
+                    <div id="SidebarContent">
+                        <a href="no"></a>
+                        <br/><label></label><br/>
+                    </div>
+                </div>
+    
+                <div id="MainImage">
+                    <div id="MainImageContent">
+                        <map name="estoremap">
+                            <area alt="Birds" coords="72,2,280,250" href="./catalog-list.html" shape="rect" />
+                            <area alt="Fish" coords="2,180,72,250" href="./catalog-list.html" shape="rect" />
+                            <area alt="Dogs" coords="60,250,130,320" href="./catalog-list.html" shape="rect" />
+                            <area alt="Reptiles" coords="140,270,210,340" href="./catalog-list.html" shape="rect" />
+                            <area alt="Cats" coords="225,240,295,310" href="./catalog-list.html" shape="rect" />
+                            <area alt="Birds" coords="280,180,350,250" href="./catalog-list.html" shape="rect" />
+                        </map>
+                        <img height="355" src="../images/splash.gif" align="middle" usemap="#estoremap" width="350" />
+                    </div>
+                </div>
+                <div id="Separator">&nbsp;
+                    <a href="viewMessage">
+                        <img src="../images/message.jpg" align="right" alt="message_box">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="Footer">
+
+            <div id="PoweredBy">&nbsp<a href="https://www.csu.edu.cn">www.csu.edu.cn</a>
+            </div>
+
+            <div id="Banner">
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#success{
+    color: green;
+}
+#fail{
+    color: red;
+}
+#register:hover {
+    color: #69f;
+  }
+  
+ #register, #register:link, #register:visited {
+    padding: .3ex;
+    color: #fff;
+    background-color: #005e21;
+    text-decoration: none;
+    font-family: helvetica, tahoma, arial, verdana, sans-serif;
+    font-size: 1.5ex;
+    text-shadow: none;
+  }

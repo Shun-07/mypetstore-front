@@ -1,0 +1,11 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+#npm包
+/node_modules/
+
+#输出目录
+/dist/

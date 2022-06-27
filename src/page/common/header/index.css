@@ -1,0 +1,30 @@
+#signOut,#signIn{
+  color: #eaac00;
+  text-decoration: none;
+  font-family: helvetica, tahoma, arial, verdana, sans-serif;
+  font-size:2ex;
+  background: black;
+  border: none;
+  cursor: pointer;
+}
+.add, .add:link, .add:visited {
+  padding: .3ex;
+  color: #fff;
+  background-color: #005e21;
+  text-decoration: none;
+  font-family: helvetica, tahoma, arial, verdana, sans-serif;
+  font-size: 1.5ex;
+  text-shadow: none;
+}
+.add:hover {
+  color: #69f;
+}
+#myAccount{
+  color: #eaac00;
+  text-decoration: none;
+  font-family: helvetica, tahoma, arial, verdana, sans-serif;
+  font-size:2ex;
+  background: black;
+  border: none;
+  cursor: pointer;
+}

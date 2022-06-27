@@ -1,0 +1,24 @@
+<table>
+<tr>
+    <th>&nbsp;</th>
+    <th>Product ID</th>
+    <th>Name</th>
+</tr>
+
+{{#ListData.productsList}}
+<tr>
+ 
+    <td> <img src={{description}} id="description"></img></td>
+    <td><a href="./catalog-list.html?id={{productId}}&route=item">{{productId}}</a></td>
+                       
+                       
+     <td>{{name}}</td>
+</tr>
+                
+{{/ListData.productsList}}
+
+
+</table>
+
+
+

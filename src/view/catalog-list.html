@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <%= require('./common/head.htm')%>
+
+</head>
+
+<body>
+    <%= require('./common/header.htm')%>
+
+
+        <div id="Content">
+            <div id="BackLink">
+                <a href="./catalog-main.html">Return to Main Menu</a>
+            </div>
+
+            <div id="Catalog">
+
+                <h2 id="cname">Category name</h2>
+
+                <table>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Name</th>
+                    </tr>
+
+                    <tr>
+
+                        <td><a>productId</a> </td>
+                        <td>productName</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+
+        <%= require('./common/footer.htm')%>
+</body>
+
+</html>

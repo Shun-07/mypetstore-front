@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <%= require('./common/head.htm')%>
+</head>
+<body>
+    <%= require('./common/header.htm')%>
+
+    <div id="Content">
+
+        <div id="Catalog">
+            <form>
+
+                <h3>User Information</h3>
+        
+                <table>
+                    <tr>
+                        <td>User ID:</td>
+                        <td><input type="text"  id="username" /></td>
+                    </tr>
+                    <tr>
+                        <td>New password:</td>
+                        <td><input type="password" id="password" /></td>
+                    </tr>
+                    <tr>
+                        <td>Repeat password:</td>
+                        <td><input  type="password" id="repeatedPassword" /></td>
+                        
+                    </tr>
+                  
+                </table>
+        
+                <label id="pwdMsg" ></label>
+        
+                <%= require('./includeAccountFields.htm')%>
+        
+                <input type="button"  id="register"   value="Register" />
+                <br><label id="message" ></label>
+        
+        
+            </form>
+        </div>
+    </div>
+    
+    <%= require('./common/footer.htm')%>
+</body>
+</html>

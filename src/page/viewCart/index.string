@@ -1,0 +1,62 @@
+   <h2>Shopping Cart</h2>
+                    <form>
+                        <table>
+                            <tr>
+                                <th><b>Item ID</b></th>
+                              
+                                <th><b>Description</b></th>
+                                <th><b>In Stock?</b></th>
+                                <th><b>Quantity</b></th>
+                                <th><b>List Price</b></th>
+                                <th><b>Total Cost</b></th>
+                                <th>&nbsp;</th>
+                            </tr>
+                
+              
+                            {{#ListData.cartList}}
+                
+                           
+                                <tr class="rem_{{cartId}}">
+                                    <td>
+                                        <a href="item.html?itemId={{itemId}}">{{itemId}}</a>
+                                    </td>
+                                   
+                                    <td>
+                                      {{itemDescription}}
+                                    </td>
+                                    <td>
+                                        {{stock}}
+                                    </td>
+                                    <td>
+                                        <input type="text" id={{cartId}} name='quantity' value={{quantity}}  >
+                                        <div id="cartMsg"></div>
+                                       
+                                    </td>
+                                    <td>
+                                       <label id="price_{{cartId}}" >{{listCost}}</label>
+                                    </td>
+                                    <td>
+                                     <label id="total_{{cartId}}" > {{totalCost}}</label>
+                                      
+                                    </td>
+                                    <td>
+                                      <input type="button" class="remove" name="remove" id={{cartId}} value="Remove"  >
+                                       
+                                    </td>
+                                </tr>
+                                {{/ListData.cartList}}
+                          
+                            <tr>
+                                <td colspan="7">
+                                   Sub Total: <label id="subtotal" >{{ListData.total}}</label>
+                                   
+                                  
+                                </td>
+                             
+                            </tr>
+                        </table>
+                    </form>
+                
+                    <c:if test="${sessionScope.cart.numberOfItems > 0}">
+                        <a class="Button" href="order.html">Proceed to Checkout</a>
+                     </c:if>

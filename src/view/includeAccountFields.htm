@@ -1,0 +1,82 @@
+<h3>Account Information</h3>
+
+<table>
+    <tr>
+        <td>First name:</td>
+        <td><input type="text" id="firstName" th:value="${session.account.getFirstName()}"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Last name:</td>
+        <td><input type="text" id="lastName"  /></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input type="text" size="40" id="email" /></td>
+    </tr>
+    <tr>
+        <td>Phone:</td>
+        <td><input type="text" id="phone" /></td>
+    </tr>
+
+    <tr>
+        <td>Address 1:</td>
+        <td><input type="text" size="40" id="address1"/></td>
+    </tr>
+    <tr>
+        <td>Address 2:</td>
+        <td><input type="text" size="40" id="address2" /></td>
+    </tr>
+    <tr>
+        <td>City:</td>
+        <td><input type="text" id="city" /></td>
+    </tr>
+    <tr>
+        <td>State:</td>
+        <td><input type="text" size="4" id="state"/></td>
+    </tr>
+    <tr>
+        <td>Zip:</td>
+        <td><input type="text" size="10" id="zip" /></td>
+    </tr>
+    <tr>
+        <td>Country:</td>
+        <td><input type="text" size="15" id="country" /></td>
+    </tr>
+</table>
+
+<h3>Profile Information</h3>
+
+<table>
+    <tr>
+        <td>Language Preference:</td>
+        <td>
+            <select id="languagePreference">
+                <option  id="english" selected="selected">English</option>
+                <option  id="japanese" >Japanese</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Favourite Category:</td>
+        <td>
+            <select id="favouriteCategoryId">
+                <option id="FISH">FISH</option>
+                <option id="DOGS" selected="selected">DOGS</option>
+                <option id="REPTILES">REPTILES</option>
+                <option id="CATS">CATS</option>
+                <option id="BIRDS">BIRDS</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Enable MyList</td>
+        <td><input type="checkbox" id="listOption" /></td>
+    </tr>
+    <tr>
+        <td>Enable MyBanner</td>
+        <td><input type="checkbox" id="bannerOption" /></td>
+    </tr>
+
+</table>
+
